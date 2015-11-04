@@ -51,16 +51,20 @@ public class JDIFrame extends JFrame {
         label1.setBackground(Color.white);  
         jdiTabPanel.addTab("Tab #1", label1);
         
-		JLabel label2 = new JLabel("Tab #2", new ImageIcon(),  
-                SwingConstants.CENTER); 
+		JLabel label2 = new JLabel("Tab #2", new ImageIcon(), SwingConstants.CENTER); 
 		label2.setVerticalTextPosition(SwingConstants.BOTTOM);  
         label2.setHorizontalTextPosition(SwingConstants.CENTER);  
         label2.setOpaque(true);  
         label2.setBackground(Color.white);  
         jdiTabPanel.addTab("Tab #2", label2);
         
+        
+        JDIMenu menu = new JDIMenu();
+        
+        this.add(menu, BorderLayout.NORTH);
+        
 		this.add(jdiTabPanel, BorderLayout.CENTER);
-		
+		this.setUndecorated(true);
 		
 	}
  
