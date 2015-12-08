@@ -37,19 +37,18 @@ public class JDIFrame extends JFrame {
 //		p.setSize(0, 500);
 		p.setBackground(new Color(81, 81, 79));
 		 
-		p.add(b);
+//		p.add(b);
 		this.add(p, BorderLayout.SOUTH);
 		
 		
 		JDITabPanel jdiTabPanel = new JDITabPanel();
 		
-		JLabel label1 = new JLabel("Tab #1", new ImageIcon(),  
-                SwingConstants.CENTER); 
+		JLabel label1 = new JLabel("Tab #1", new ImageIcon(), SwingConstants.CENTER); 
 		label1.setVerticalTextPosition(SwingConstants.BOTTOM);  
         label1.setHorizontalTextPosition(SwingConstants.CENTER);  
         label1.setOpaque(true);  
         label1.setBackground(Color.white);  
-        jdiTabPanel.addTab("Tab #1", label1);
+        jdiTabPanel.addTab("<html><font style=\"color:red;\">111111111</font><br>2222222222222<br>333333333</html>", label1);
         
 		JLabel label2 = new JLabel("Tab #2", new ImageIcon(), SwingConstants.CENTER); 
 		label2.setVerticalTextPosition(SwingConstants.BOTTOM);  
@@ -59,12 +58,11 @@ public class JDIFrame extends JFrame {
         jdiTabPanel.addTab("Tab #2", label2);
         
         
-        JDIMenu menu = new JDIMenu();
+//        JDIMenu menu = new JDIMenu();
         
-        this.add(menu, BorderLayout.NORTH);
+//        this.add(menu, BorderLayout.NORTH);
         
 		this.add(jdiTabPanel, BorderLayout.CENTER);
-		this.setUndecorated(true);
 		
 	}
  
